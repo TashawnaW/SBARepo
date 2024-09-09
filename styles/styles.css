@@ -1,6 +1,6 @@
 /* styles.css */
 
-/* Custom color palette */
+/* color palette */
 :root {
   --primary-color: #4a8e3f;
   --secondary-color: #f9a825;
@@ -9,7 +9,7 @@
   --text-color: #333333;
 }
 
-/* Global styles */
+/* Font Styles */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -42,7 +42,7 @@ body {
 
 /* Jumbotron styles */
 .jumbotron {
-  background-color: var(--secondary-color);
+  background-color: (--secondary-color);
   color: white;
 }
 
