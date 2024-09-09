@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Mart Grocery - Curbside Pickup</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+   
+   <!-- Syle Sheet -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .curbside-gif {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Farmer's Mart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="curbside.html">Curbside Pickup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Curbside Pickup</h1>
+        <p>Enjoy the convenience of our curbside pickup service. Simply place your order online and pick it up at your scheduled time!</p>
+
+        <img src="/images/curbside.jpg" alt="Curbside Pickup Illustration" class="curbside-gif mb-4">
+
+        <h2>How It Works</h2>
+        <ol>
+            <li>Place your order online</li>
+            <li>Choose a pickup time</li>
+            <li>Park in a designated curbside pickup spot</li>
+            <li>Call the number on the sign</li>
+            <li>We'll bring your groceries right to your car!</li>
+        </ol>
+
+        <h2>Schedule Your Pickup</h2>
+        <form class="mb-4">
+            <div class="mb-3">
+                <label for="orderNumber" class="form-label">Order Number</label>
+                <input type="text" class="form-control" id="orderNumber" required>
+            </div>
+            <div class="mb-3">
+                <label for="pickupDate" class="form-label">Pickup Date</label>
+                <input type="date" class="form-control" id="pickupDate" required>
+            </div>
+            <div class="mb-3">
+                <label for="pickupTime" class="form-label">Pickup Time</label>
+                <select class="form-select" id="pickupTime" required>
+                    <option value="">Choose a time...</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Schedule Pickup</button>
+       
